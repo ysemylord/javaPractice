@@ -1,5 +1,5 @@
 //: net/mindview/atunit/AtUnit.java
-// An annotation-based unit-test framework.
+// An eventBus-based unit-test framework.
 // {RunByHand}
 package net.mindview.atunit;
 

@@ -1,4 +1,4 @@
-package annotation;
+package eventBus;
 
 
 public class Test {

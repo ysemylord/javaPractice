@@ -1,4 +1,4 @@
-package annotation;
+package eventBus;
 
 import java.lang.annotation.*;
 

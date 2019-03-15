@@ -1,4 +1,4 @@
-package annotation;
+package eventBus;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
