@@ -1,0 +1,14 @@
+1. 先前的概念   
+   使用T(n):计算规模为n的问题，需要的计算次数。来衡量算法
+2. 使用大O记号来衡量算法的复杂度  
+   1. 大O记号从整体趋势来衡量算法的复杂度    
+   2. 大O记号可以看做是T（n）的一个悲观估计
+   ![](https://note.youdao.com/yws/public/resource/e1de6ab70a6075f4d9f88daf8c95d14b/xmlnote/FD1854E52D004655A71B5CE21A34BC6B/22159)
+3. 大O记号的各种复杂度
+    1. 常数复杂度O(1)
+    2. 对数复杂度O(log n)
+    3. 多项式复杂度O(n^k)
+    4. 指数复杂度O(a^n)
+    ![](https://note.youdao.com/yws/public/resource/e1de6ab70a6075f4d9f88daf8c95d14b/xmlnote/B3A322734FA24E81B7E46C4361AA949B/22161)
+
+    

@@ -1,0 +1,10 @@
+## 1. HttpServer的作用  
+1. 将客户端发送来的数据按照Http请求报文解析，并封装成RequestPackage对象，
+2. 根据不同的请求路径，使用不同的Servlet响应，  
+       其中涉及到一些小技巧  
+       1. 使用分发器Dispather  
+       2. 将Servlet抽象为抽象类，针对不同的资源路径使用不同的Servlet
+       3. ServletContext中存放所有的Servlet
+       4. WebApp作为ServletContext的管理类，向其中写入数据  
+3. 最后将响应的内容使用ResponsePackage按照
+Http响应报文的格式输出给客户端
