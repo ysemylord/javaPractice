@@ -6,6 +6,7 @@ import java.util.concurrent.Executors;
 public class Wait {
     private static boolean flag=false;
     public static void main(String[] args) {
+        Object object=new Object();
         ExecutorService executorService= Executors.newCachedThreadPool();
         Runnable runnable1 = new Runnable() {
             @Override
@@ -13,7 +14,11 @@ public class Wait {
                   synchronized (this){
                       try {
                           while (!flag) {
-                              wait();
+                              System.out.println(Thread.currentThread()+" 当前线程进入Waiting状态");
+                              synchronized (object) {
+                                  object.wait();
+                              }
+                              System.out.println(Thread.currentThread()+" 当前线程被唤醒，进入RUNNABLE 状态");
                           }
                       } catch (InterruptedException e) {
                           e.printStackTrace();
@@ -31,9 +36,9 @@ public class Wait {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                synchronized (runnable1){
+                synchronized (object){
                     flag=true;
-                    runnable1.notifyAll();
+                    object.notifyAll();
                 }
             }
         });
