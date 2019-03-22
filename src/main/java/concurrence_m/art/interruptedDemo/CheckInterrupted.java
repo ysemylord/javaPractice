@@ -9,7 +9,10 @@ public class CheckInterrupted {
         countTread.start();
         Thread.sleep(2000);
         countTread.interrupt();
+
     }
+
+
 
     private static class CountRunable implements Runnable {
         private int count = 0;
