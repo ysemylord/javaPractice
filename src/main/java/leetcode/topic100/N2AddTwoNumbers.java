@@ -1,6 +1,6 @@
 package leetcode.topic100;
 
-public class AddTwoNumbers {
+public class N2AddTwoNumbers {
 
     public static void main(String[] args) {
 
