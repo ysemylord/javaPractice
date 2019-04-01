@@ -28,5 +28,12 @@ public class N3Top100Test {
         System.out.println(length);
     }
 
+    @org.junit.Test
+    public void test4() throws Exception {
+        //"tmmzuxt" "abcabcbb"
+         String time="00:16.42";
+         String[] res=time.split("[:,\\.]");
+         System.out.println(res[0]+" "+res[1]+" "+res[2]);
+    }
 
 }
